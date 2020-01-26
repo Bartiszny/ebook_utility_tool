@@ -23,6 +23,9 @@ class Mp3Panel(wx.Panel):
 
     def on_edit(self, event):
         print('in on_edit')
+        self.list_ctrl.InsertItem(0, "blabla")
+        self.list_ctrl.SetItem(0, 1, "bleeeeee")
+        self.list_ctrl.InsertItem(1, "bleee")
 
     def update_mp3_listing(self, folder_path):
         print(folder_path)

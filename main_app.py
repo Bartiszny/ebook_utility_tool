@@ -1,6 +1,6 @@
 import wx
-import ebook_utility_tool as EU
-
+import ebook_utility_tool as eu
+import ebook_list
 # class MyFrame(wx.Frame):
 #     def __init__(self):
 #         super().__init__(parent=None, title='Hello World')
@@ -23,9 +23,11 @@ import ebook_utility_tool as EU
 class Mp3Frame(wx.Frame):
     def __init__(self):
         super().__init__(parent=None,
-                         title='Mp3 Tag Editor')
-        self.panel = EU.Mp3Panel(self)
+                         title='EbookList')
+        self.panel = eu.Mp3Panel(self)
+
         self.Show()
+
 
 if __name__ == '__main__':
     app = wx.App(False)
